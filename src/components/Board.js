@@ -43,7 +43,7 @@ const Board=()=>{
     }
     return(
         <div className=" grid grid-cols-1">
-        <span className=" border-2 rounded-xl border-blue-200 text-white font-serif text-2xl bg-green-700 align-bottom py-2 mx-16 mb-6 inline-block px-3/4">{status}</span>
+        <span className=" border-2 rounded-xl border-blue-200 text-white font-serif text-2xl bg-green-700 align-bottom py-2 mx-16 mb-6 inline-block px-3/4 cursor-none">{status}</span>
         <section className="border-blue-300 border-4 inline  mx-auto">
   <div  className="board-row">
    <Square value={squares[0]} onSquareClick={()=>handleClick(0)}/>
@@ -61,7 +61,7 @@ const Board=()=>{
    <Square value={squares[8]} onSquareClick={()=>handleClick(8)}></Square>
    </div>
    </section>
-   <button className='inline  rounded-xl font-sans  text-lg bg-blue-900 hover:scale-125 duration-100 cursor-pointer  text-white px-4 mx-auto mt-8 p-1 font-semibold' onClick={resetBoard}>Restart</button>
+   <button className='inline  rounded-xl font-sans  text-lg bg-blue-900 hover:scale-125 duration-100 cursor-pointer  text-white px-4 mx-auto mt-8 p-1 font-semibold' onClick={resetBoard}>Play Again</button>
    </div>
     );
 }
