@@ -1,0 +1,10 @@
+
+.Square{
+    height: 5rem;
+    width: 5rem;
+    border: solid 1px
+}
+
+.board-row{
+   display: flex;
+}
